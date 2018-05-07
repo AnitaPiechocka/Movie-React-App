@@ -1,15 +1,9 @@
-import React, { Component } from 'react';
+import React from 'react';
 import ReactDOM from 'react-dom';
+import App from './components/App';
 
-class App extends Component {
-  render() {
-    return (
-      <div>Movie React App</div>
-    );
-  }
-}
 
 ReactDOM.render(
   <App />,
-  document.querySelector('.container')
+  document.querySelector('.container'),
 );
