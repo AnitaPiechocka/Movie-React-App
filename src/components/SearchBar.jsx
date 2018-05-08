@@ -21,7 +21,7 @@ class SearchBar extends Component {
         <input
           type="text"
           className="form-control search-bar"
-          placeholder="Szukaj filmów"
+          placeholder="Search"
           value={this.state.text}
           onChange={e => this.setState({ text: e.target.value })}
           onKeyPress={this.checkIfSend}

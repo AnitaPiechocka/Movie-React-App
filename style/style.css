@@ -15,12 +15,12 @@
 
 .search-bar {
   margin: 20px;
-  margin-left: 10%;
+  margin-left: 15%;
   padding: 5px;
   text-align: center;
   display: flex;
   align-items: center;
-  width: 57%;
+  width: 45%;
   justify-content: flex-end;
 }
 .search-bar input {
@@ -36,8 +36,8 @@
   color: #f2c314;
   display: flex;
   position: absolute;
-  top: 8.3%;
-  left: 62%;
+  top: 5.8%;
+  left: 39.5%;
 }
 
 input[type=text] {
@@ -75,8 +75,4 @@ a:hover, a:active {
   font-size: 280%;
   text-decoration: none;
   transition: font-size 0.3s;
-}
-
-input::-moz-placeholder {
-  color: white;
 }
