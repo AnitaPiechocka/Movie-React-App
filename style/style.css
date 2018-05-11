@@ -73,3 +73,58 @@ a:hover, a:active {
   text-decoration: none;
 }
 
+body
+{
+  background-color: #000;
+  color: #f2c314;
+    margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+.slider{
+  position: relative; 
+  top:100px;
+  left:100px;
+}
+.pic
+{
+  height: 500px;
+  width: 800px;
+}
+.arrow-right
+{
+  
+  position: absolute;
+  top:49%;
+  left: 785px;
+  color: #f2c314;
+  opacity:0.6;
+}
+
+.arrow-left
+{
+  position: absolute;
+  top:49%;
+  color: #f2c314;
+  opacity:0.6;
+}
+.arrow-left:hover, .arrow-right:hover
+{
+  opacity:1;
+}
+
+.dot
+{
+  background-color: #f2c314;
+  text-align: center;
+  display:block;
+  width:4px;
+  height:4px;
+  cursor:pointer;
+  opacity:0.6;
+  transition: opacity 0.15s ease-in-out;
+}
+.dot:hover
+{
+  opacity:1;
+}
