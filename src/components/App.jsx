@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import Axios from 'axios';
+import axios from 'axios';
 import SearchBar from './SearchBar';
 import SocialBar from './SocialBar';
 import LeftArrow from './LeftArrow.js';
@@ -26,8 +26,8 @@ class App extends Component {
     this.dot = this.dot.bind(this);
   }
   getMovies = (query) => {
-    Axios
-      .get(`https://api.themoviedb.org/3/movie/157336?api_key={3a09069e0a21ddcf36342eae363d3562}&append_to_response=${query}`)
+    axios
+      .get(`https://api.themoviedb.org/3/movie?api_key=3a09069e0a21ddcf36342eae363d3562&language=en-US&query="${query}`)
       .then((data) => {
         const { movies } = data.data;
         this.setState({ movies });

@@ -3,21 +3,28 @@ import React, { Component } from 'react';
 class SearchBar extends Component {
   state = {
     text: '',
-  }
+  };
 
   updateText = (e) => {
     this.setState({ text: e.target.value });
+  };
+
+  checkIfSend = (e) => {
+    if (e.key === 'Enter') {
+      this.props.getMovies(this.state.text);
+    }
   }
 
   render() {
     return (
       <div className="search-bar">
         <input
-          className="form-control search-bar"
           type="text"
+          className="form-control search-bar"
+          placeholder="Search"
           value={this.state.text}
           onChange={e => this.setState({ text: e.target.value })}
-          placeholder="Szukaj filmów"
+          onKeyPress={this.checkIfSend}
         />
         <i className="fas fa-search" />
       </div>
